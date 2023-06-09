@@ -1,0 +1,114 @@
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 1em;
+  background-image: linear-gradient(to right top, #fe8b00, #f5a400, #e7bc00, #d6d300, #c0e82a);
+  height: 100vh;
+}
+
+input[type="text"]{
+  width: 500px;
+  height: 50px;
+  padding: 1em;
+  font-size: 1.25em;
+  font-weight: bold;
+  margin: 1em 0;
+  
+}
+
+input[type="radio"]{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+
+.wordsArea{
+  padding: 1em;
+  box-shadow: 0px 0px 20px black;
+  width: 600px;
+  margin: 0 auto;
+  display: flex;
+  height: 150px;
+  overflow: hidden;
+  flex-wrap: wrap;
+  font-size: 1.25em;
+  row-gap: 0.5em;
+}
+input[type="radio"]:checked + label{
+  color: rgb(120, 3, 229);
+  font-weight: bold;
+  
+  padding: 0.05em;
+}
+.true{
+  color: green;
+  font-weight: bold;
+
+}
+.false{
+  color: red;
+  font-weight: bold;
+}
+
+.label{
+  flex-basis: calc(100% / 6);
+  display: flex;
+  justify-content: center;
+}
+.inputArea{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 550px;
+  margin: 0 auto;
+  position: relative;
+}
+.inputArea h3{
+  position: absolute;
+  right: 2em;
+  border: 2px solid red;
+  border-radius: 50%;
+  padding: 0.25em 0.5em;
+  color: red;
+  font-size: 1.35em;
+}
+.resultArea{
+
+  width: 90%;
+  margin: 0 auto;
+  justify-content: center;
+  gap: 1.5em
+}
+span{
+  color: green;
+  font-size: 1.35em;
+  font-weight: bolder;
+}
+.total{
+  color: purple;
+}
+.title{
+  background: -webkit-linear-gradient(green, blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+.info{
+  color: purple;
+
+  text-align: center;
+}
+
+
+/* .logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+} */
