@@ -56,7 +56,7 @@ function App() {
   )})
 
   if(userInputs.length > 0 && userInputs.length % 6 === 0){
-    document.getElementById("wordsArea").scrollTo(0, (userInputs.length*6))
+    document.getElementById("wordsArea").scrollTo(0, (userInputs.length*5.5))
     // önceden 4.6 burada, 6 tane css kısmındaydı
 
   }
@@ -99,9 +99,9 @@ function App() {
       setDisabled(false)
     }, 3000)
     setTestStarted(false) 
-    setTimeRemaining(5)
+    setTimeRemaining(60)
     setRandomWords(shuffle(wordsData))
-    // document.getElementById("wordsArea").scrollTo(0, -50)
+    document.getElementById("wordsArea").scrollTo(0, 0)
     myRef.current.focus();
    
 
